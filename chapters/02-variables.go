@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func variables() {
 
 	//defining const
 	const conferenceTickets int = 50
