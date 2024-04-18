@@ -1,2 +1,2 @@
 # golang
-Learning Goland from https://gitlab.com/nanuchi/go-full-course-youtube
+Learning Golanguage from https://gitlab.com/nanuchi/go-full-course-youtube
