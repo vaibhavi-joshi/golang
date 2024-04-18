@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func loop() {
+func loops() {
 
 	const conferenceTickets int = 50
 	var remainingTickets uint = 50

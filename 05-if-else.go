@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func main() {
+func ifelse() {
 	conferenceName := "Go Conference"
 	const conferenceTickets = 50
 	var remainingTickets uint = 50
