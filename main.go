@@ -35,9 +35,7 @@ func main() {
 		isValidEmail := strings.Contains(email, "@")
 		isValidTicketNumber := userTickets > 0 && userTickets <= remainingTickets
 
-		isValidCity := city == "S ingapore" || city == "London"
-
-		if isValidTicketNumber {
+		if isValidName && isValidEmail && isValidTicketNumber {
 			//book tickets in system
 			remainingTickets = remainingTickets - userTickets
 			bookings = append(bookings, firstName+" "+lastName)
@@ -59,8 +57,15 @@ func main() {
 				break
 			}
 		} else {
-			fmt.Printf("We only have %v tickets reamining, so you can't book %v tickets!\n", remainingTickets, userTickets)
-			continue
+			if !isValidName {
+				fmt.Println("first name of last name is too short!!")
+			}
+			if !isValidEmail {
+				fmt.Println("email address you entered does not contain @ sign!")
+			}
+			if !isValidTicketNumber {
+				fmt.Println("Invalid Ticket Number!")
+			}
 		}
 
 	}
